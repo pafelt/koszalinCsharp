@@ -10,6 +10,7 @@ namespace CSharp_Basics
     [TestFixture]
     public class StringsAndItsOperations
     {
+        private string Poem = "Powiem szczerze, znajomych mam wielu,Ale tylko do Ciebie mogę powiedzieć: Mój przyjacielu.Po dodaniu imienia wiersz będzie już wierszykiem spersonalizowanym:Powiem szczerze, znajomych mam wielu,Ale tylko do Ciebie Andrzeju mogę powiedzieć: Mój przyjacielu.";
         /// <summary>
         /// String is diffrent then previues types we talk about
         /// values of string we are passing in quotation marks
@@ -48,9 +49,9 @@ namespace CSharp_Basics
 
         //    string itsEmpty = string.Empty;
 
-
         //    Assert.That(itsEmpty, Is.Not.Null);
         //}
+        }
 
         //        /// <summary>
         //        /// + is not best way of adding string
