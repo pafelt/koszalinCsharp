@@ -70,6 +70,13 @@ namespace CSharp_Basics
            // throw new ArgumentOutOfRangeException();
 
         }
+        //północ
+        /*id 
+        1-5 - 5 cyfr
+        południe
+        6-9 - 5 cyfr
+
+        throw new ArgumentOutOfRangeException();*/
         [Test]
         public void Employe_IDIsOutRange_ThrowArgumentOutOfRange()
         {
@@ -80,7 +87,13 @@ namespace CSharp_Basics
         [TestCase(Locations.Koszalin,11111)]
         [TestCase(Locations.Szczecin,22222)]
 
+        [TestCase(Locations.Koszalin,11111)]
+        [TestCase(Locations.ZielonaGora,66666)]
+        public void Employe_IDisInWrongRange_ThrowsArgrumentOutOfRange(Locations loc, int badge)
+        {
+            Assert.Throws<ArgumentOutOfRangeException>(
+                () => new Employee("Emka", badge, loc)
+            );
         }
-
     }
 }

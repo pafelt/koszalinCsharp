@@ -41,14 +41,14 @@ namespace CSharp_Basics
         //    int number = 14;
         //    int lessThenZero = -100;
 
-        //            Assert.AreEqual(example, 0, "Example Has wrong value did you changed it?");
-        //            Assert.AreEqual(singleDigit, 6, "Example Has wrong value did you changed it?");
-        //            Assert.That(singleDigit, Is.TypeOf<int>(), "You sure it is int?");
-        //            Assert.AreEqual(number, 14, "Example Has wrong value did you changed it?");
-        //            Assert.That(singleDigit, Is.TypeOf<int>(), "You sure it is int?");
-        //            Assert.AreEqual(lessThenZero, -100, "Example Has wrong value did you changed it?");
-        //            Assert.That(singleDigit, Is.TypeOf<int>(), "You sure it is int?");
-        //        }
+            Assert.AreEqual(example, 0, "Example Has wrong value did you changed it?");
+            Assert.AreEqual(singleDigit, 6, "Example Has wrong value did you changed it?");
+            Assert.That(singleDigit, Is.TypeOf<int>(), "You sure it is int?");
+            Assert.AreEqual(number, 14, "Example Has wrong value did you changed it?");
+            Assert.That(singleDigit, Is.TypeOf<int>(), "You sure it is int?");
+            Assert.AreEqual(lessThenZero, -100, "Example Has wrong value did you changed it?");
+            Assert.That(singleDigit, Is.TypeOf<int>(), "You sure it is int?");
+        }
 
         //        /// <summary>
         //        /// Basic operations at integers are

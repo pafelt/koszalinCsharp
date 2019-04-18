@@ -117,16 +117,40 @@ namespace CSharp_Basics
         //        /// From theString return word "thing".
         //        /// hint use Substring() method
         //        /// </summary>
-        //[Test]
+        //        [Test]
         //public void Substrings()
         //{
         //    var theString =
         //        "The interesting thing about London is that there are always stylish surprises around every corner.";
 
+        //            Assert.AreEqual(result,"thing");
         //    int searchid = theString.IndexOf("thing");
         //    string result = theString.Substring(searchid,5);
 
         //    Assert.AreEqual("thing",result);
         //}
+
+
+        [Test]
+        public void Replace()
+        {
+            Poem= Poem.Replace(",", ",\n");
+            Poem = Poem.Replace(".", ".\n");
+            Poem = Poem.Replace(":", ":\n");
+
+            Console.WriteLine(Poem);
+        }
+
+        [Test]
+        public void Replace2()
+        {
+            var split = Poem.Split(',');
+            Poem = string.Join(",\n", split);
+            split = Poem.Split('.');
+            Poem = string.Join(".\n", split);
+            split = Poem.Split(':');
+            Poem = string.Join(":\n", split);
+            Console.WriteLine(Poem);
+        }
     }
 }
