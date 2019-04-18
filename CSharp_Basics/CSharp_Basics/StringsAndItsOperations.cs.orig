@@ -10,34 +10,7 @@ namespace CSharp_Basics
     [TestFixture]
     public class StringsAndItsOperations
     {
-        private string Poem = "Powiem szczerze, znajomych mam wielu,Ale tylko do Ciebie mogę powiedzieć: Mój przyjacielu.Po dodaniu imienia wiersz będzie już wierszykiem spersonalizowanym:Powiem szczerze, znajomych mam wielu,Ale tylko do Ciebie Andrzeju mogę powiedzieć: Mój przyjacielu.";
-
-        //,:.
-
-        [Test]
-        public void Replace()
-        {
-
-        
-            Poem = Poem.Replace(",", ",\n");
-            Poem = Poem.Replace(":", ":\n");
-            Poem =  Poem.Replace(".", ".\n");
-            Console.WriteLine(Poem);
-
-        }
-
-        [Test]
-        public void Replace2()
-        {
-            var split = Poem.Split(',');
-            Poem = string.Join(",\n", split);
-            split = Poem.Split('.');
-            Poem = string.Join(".\n", split);
-            split = Poem.Split(':');
-            Poem = string.Join(":\n", split);
-            Console.WriteLine(Poem);
-        }
-
+<<<<<<< HEAD
         /// <summary>
         /// String is diffrent then previues types we talk about
         /// values of string we are passing in quotation marks
@@ -47,13 +20,27 @@ namespace CSharp_Basics
         //    [Test]
         //    public void Bascis_Of_Strings()
         //    {
-        //string Name = "Patryk";
+        //string Name = "Patryk Afelt";
         //string Example = "This is example string";
 
         //string Value = Example + " " + Name;
         //Console.WriteLine(Value);
         //Assert.AreEqual(Value, "This is example string Patryk Afelt");
         //    }
+=======
+        private string Poem = "Powiem szczerze, znajomych mam wielu,Ale tylko do Ciebie mogę powiedzieć: Mój przyjacielu.Po dodaniu imienia wiersz będzie już wierszykiem spersonalizowanym:Powiem szczerze, znajomych mam wielu,Ale tylko do Ciebie Andrzeju mogę powiedzieć: Mój przyjacielu.";
+        //        /// <summary>
+        //        /// String is diffrent then previues types we talk about
+        //        /// values of string we are passing in quotation marks
+        //        /// 
+        //        /// Create new string with your name and then add them together
+        //        /// </summary>
+        //        [Test]
+        //        public void Bascis_Of_Strings()
+        //        {
+        //            string Example = "This is example string";
+        //        }
+>>>>>>> maciej/master
 
         //        /// <summary>
         //        ///  string is first Reference Type you see (We will talk more about them later)
@@ -61,6 +48,7 @@ namespace CSharp_Basics
         //        ///  use string.Empty;
         //        ///  create new strings itsEmpty and make it empty
         //        /// </summary>
+<<<<<<< HEAD
         //[Test]
         //public void String_Initialization()
         //{
@@ -76,9 +64,25 @@ namespace CSharp_Basics
 
         //    string itsEmpty = string.Empty;
 
+
         //    Assert.That(itsEmpty, Is.Not.Null);
         //}
-        // }
+=======
+        [Test]
+        public void String_Initialization()
+        {
+            int x = 6;
+            double z = 5;
+            string errorMessage = "There was error with operation values \n" + x + " and " + z;
+            string errorMessageFormat = string.Format("There was error with operation values \n{0} and {1}", x, z);
+            string errorMessageFormatDollar = $"There was error with operation values \n{x} and {z}               ";
+            Console.WriteLine(errorMessage);
+            Console.WriteLine(errorMessageFormat);
+            Console.WriteLine(errorMessageFormatDollar);
+            //Assert.That(itsEmpty, Is.Not.Null);
+            Assert.That(z, Is.EqualTo(6));
+        }
+>>>>>>> maciej/master
 
         //        /// <summary>
         //        /// + is not best way of adding string

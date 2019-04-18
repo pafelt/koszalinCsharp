@@ -49,6 +49,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataTypesAndVariables.cs" />
+    <Compile Include="Employee.cs" />
+    <Compile Include="EmployeeTests.cs" />
+    <Compile Include="ItEmployee.cs" />
+    <Compile Include="Locations.cs" />
+    <Compile Include="ProgrammingLanguage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StringsAndItsOperations.cs" />
   </ItemGroup>
